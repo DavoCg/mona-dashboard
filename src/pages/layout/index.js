@@ -14,6 +14,9 @@ class Layout extends Component {
                     <Sidebar/>
                 </div>
                 <div className={css(style.content)}>
+                    <div className={css(style.top)}>
+
+                    </div>
                     {this.props.children}
                 </div>
             </div>

@@ -3,18 +3,20 @@ import {colors, shadows, fontFamily} from '../../constants/style';
 
 export default StyleSheet.create({
     container: {
-        display: 'flex',
-        height: 200
+        padding: 15
     },
 
     header: {
         display: 'flex',
-        alignItems: 'space-between',
-        height: 120
+        flexDirection: 'row',
+        justifyContent: 'start',
+        alignItems: 'center'
     },
 
     image: {
-        height: 100,
-        width: 100
+        height: 40,
+        width: 40,
+        borderRadius: 20,
+        marginRight: 15
     }
 });

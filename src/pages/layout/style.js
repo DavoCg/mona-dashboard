@@ -4,18 +4,20 @@ import {colors, fontFamily} from '../../constants/style';
 export default StyleSheet.create({
     container: {
         display: 'flex',
-        paddingLeft: '20vh',
-        paddingRight: '20vh'
+        marginLeft: '15vw',
+        marginRight: '15vw'
     },
 
     content: {
-        flexGrow: 4,
-        backgroundColor: 'green',
-        height: '200px'
+        flexGrow: 10,
     },
 
     sidebar: {
-        flexGrow: 1,
-        backgroundColor: 'red'
+        flexGrow: 1
+    },
+
+    top: {
+        backgroundColor: 'red',
+        height: 80
     }
 });
