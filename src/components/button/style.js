@@ -22,6 +22,6 @@ export default StyleSheet.create({
         textTransform: 'uppercase',
         fontSize: '0.75em',
         letterSpacing: 1.75,
-        fontWeight: 300
+        fontWeight: 400
     }
 });

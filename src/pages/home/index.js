@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {css} from 'aphrodite';
 import {mapDispatchToProps} from '../../utils';
+import {page} from '../../components';
 import {connect} from 'react-redux';
 import style from './style';
 
@@ -22,6 +23,6 @@ class Home extends Component {
     }
 }
 
-export default connect((state) => ({
+export default page((state) => ({
     name: state.user.name
-}), mapDispatchToProps)(Home);
+}))(Home)

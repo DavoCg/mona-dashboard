@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import {Provider} from 'react-redux';
 import createStore from './store';
-import {Home, Login} from './pages';
+import {ConnectedRouter} from 'react-router-redux';
+import createHistory from 'history/createBrowserHistory';
+import MainRouter from './router';
 
-const store = createStore({});
+const history = createHistory();
+const store = createStore({}, history);
 
 export default class App extends Component {
     render(){
         return (
             <Provider store={store}>
-                <Login/>
+                <ConnectedRouter history={history}>
+                    <MainRouter/>
+                </ConnectedRouter>
             </Provider>
         );
     }

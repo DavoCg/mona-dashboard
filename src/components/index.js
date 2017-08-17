@@ -1,3 +1,4 @@
 import Button from './button';
 import Input from './input';
-export {Input, Button};
+import page from './page';
+export {page, Input, Button};

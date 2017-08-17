@@ -11,11 +11,12 @@ export default StyleSheet.create({
         borderRadius: 2,
         paddingLeft: 5,
         paddingRight: 5,
-        fontSize: '0.85em',
+        fontSize: '0.9em',
         fontFamily: fontFamily,
+        color: colors.blue,
         transition: 'all 0.2s ease-out',
         ':focus': {
-            transition: 'all 0.2s ease-out',
+            transition: 'all 0.2s ease-out'
         },
         ':hover': {
             backgroundColor: colors.lightgrey,

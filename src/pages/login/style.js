@@ -16,6 +16,7 @@ export default StyleSheet.create({
 
     logo: {
         width: '6vw',
+        minWidth: '80px',
         marginBottom: 30
     },
 
@@ -25,6 +26,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-end',
         width: '20vw',
+        minWidth: '300px',
         backgroundColor: colors.white,
         borderRadius: 2,
         padding: 15

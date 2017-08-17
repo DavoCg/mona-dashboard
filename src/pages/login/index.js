@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {css} from 'aphrodite';
 import {mapDispatchToProps} from '../../utils';
-import {Button, Input} from '../../components';
+import {page, Button, Input} from '../../components';
 import logo from '../../images/stripe.png';
 import {connect} from 'react-redux';
 import style from './style';
@@ -30,7 +30,5 @@ class Login extends Component {
     }
 }
 
-export default connect((state) => ({
-
-}), mapDispatchToProps)(Login);
+export default page()(Login)
 
