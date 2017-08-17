@@ -1,3 +1,4 @@
 import Home from './home';
 import Login from './login';
-export {Home, Login};
+import Layout from './layout';
+export {Home, Login, Layout};

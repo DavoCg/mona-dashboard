@@ -1,13 +1,15 @@
 import React from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {Home, Login} from '../pages';
+import {Home, Login, Layout} from '../pages';
 
-const HomeRouter = () => (
-    <Switch>
-        <Route exact path='/home' component={Home}/>
-        <Redirect from={'/'} exact to={'/home'} />
-    </Switch>
+const LoggedRouter = () => (
+    <Layout>
+        <Switch>
+            <Route exact path='/home' component={Home}/>
+            <Redirect from={'/'} exact to={'/home'} />
+        </Switch>
+    </Layout>
 );
 
 export default connect(state => ({
@@ -17,7 +19,7 @@ export default connect(state => ({
     return (
         <Switch>
             <Route exact path='/login' render={() => props.logged ? <Redirect to={'/'}/> : <Login/>}/>
-            <Route path='/' render={() => !props.logged ? <Redirect to={'/login'}/> : <HomeRouter/>}/>
+            <Route path='/' render={() => !props.logged ? <Redirect to={'/login'}/> : <LoggedRouter/>}/>
         </Switch>
     );
 });
