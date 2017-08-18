@@ -1,2 +1,3 @@
 import * as user from './user';
-export default {user};
+import * as navigation from './navigation';
+export default {user, navigation};

@@ -36,7 +36,7 @@ export default StyleSheet.create({
         ':hover': {
             transition: 'all 0.25s ease-out',
             cursor: 'pointer',
-            fontWeight: '400',
+            color: darken(0.9, colors.textGrey),
             backgroundColor: darken(0.05, colors.lightgrey)
         }
     },
@@ -55,6 +55,7 @@ export default StyleSheet.create({
     },
 
     current: {
+        transition: 'all 0.25s ease-out',
         color: colors.popBlue,
         fontWeight: '400'
     }

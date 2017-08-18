@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import {css} from 'aphrodite';
-import {mapDispatchToProps} from '../../utils';
 import {page, Button, Input} from '../../components';
 import logo from '../../images/stripe.png';
-import {connect} from 'react-redux';
 import style from './style';
 
 class Login extends Component {

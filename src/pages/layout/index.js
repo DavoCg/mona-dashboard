@@ -5,28 +5,32 @@ import {page, Sidebar, Topbar, Popover} from '../../components';
 import {connect} from 'react-redux';
 import style from './style';
 
-const content = [
-    {name: 'Mes oeuvres', icon: 'picture'},
-    {name: 'En vente', icon: 'basket-loaded'},
-    {name: 'Vendues', icon: 'check', last: true},
-    {name: 'Facturations', icon: 'credit-card'},
-    {name: 'Mes informations', icon: 'user', last: true},
-    {name: 'Ajouter une oeuvre', icon: 'plus'}
-];
-
 class Layout extends Component {
 
     constructor(props){
         super(props);
         this.state = {
+            content: [
+                {name: 'Mes oeuvres', icon: 'picture', handler: this.navigate('home')},
+                {name: 'En vente', icon: 'basket-loaded', handler: this.navigate('home')},
+                {name: 'Vendues', icon: 'check', handler: this.navigate('home'), last: true},
+                {name: 'Facturations', icon: 'credit-card', handler: this.navigate('billing')},
+                {name: 'Mes informations', icon: 'user', handler: this.navigate('informations'), last: true},
+                {name: 'Ajouter une oeuvre', icon: 'plus', handler: this.navigate('add-item')}
+            ],
             active: 0,
             popover: false,
             popoverNode: {}
         }
     }
 
+    navigate(name){
+        const {actions} = this.props;
+        return () => actions.navigation.push(`/${name}`);
+    }
+
     render(){
-        const {active, popover, popoverNode} = this.state;
+        const {content, active, popover, popoverNode} = this.state;
         return (
             <div className={css(style.container)}>
                 <div className={css(style.sidebar)}>
@@ -48,4 +52,6 @@ class Layout extends Component {
     }
 }
 
-export default page()(Layout)
+export default page(state => ({
+    routing: state.routing
+}))(Layout)

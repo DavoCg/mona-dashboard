@@ -3,18 +3,17 @@ import {css} from 'aphrodite';
 import {page} from '../../components';
 import style from './style';
 
-class Home extends Component {
+class Informations extends Component {
 
     constructor(props){
         super(props);
     }
 
     render(){
-        const {name} = this.props;
         return (
             <div>
                 <p className={css(style.text)}>
-                    {`Hello, ${name}`}
+                    {'Informations'}
                 </p>
             </div>
         );
@@ -22,5 +21,5 @@ class Home extends Component {
 }
 
 export default page((state) => ({
-    name: state.user.name
-}))(Home)
+
+}))(Informations)

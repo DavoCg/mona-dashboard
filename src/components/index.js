@@ -4,4 +4,5 @@ import Sidebar from './side-bar';
 import Topbar from './top-bar';
 import Popover from './popover';
 import page from './page';
-export {page, Input, Button, Sidebar, Topbar, Popover};
+import Search from './search';
+export {page, Input, Button, Sidebar, Topbar, Popover, Search};

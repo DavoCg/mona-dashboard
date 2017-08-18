@@ -6,9 +6,13 @@ export default StyleSheet.create({
     top: {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'flex-end',
+        justifyContent: 'space-between',
         height: 60,
         marginTop: 15
+    },
+
+    icons: {
+        display: 'flex',
     },
 
     iconAccount: {

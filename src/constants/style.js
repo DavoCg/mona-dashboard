@@ -4,14 +4,14 @@ export const colors = {
     textBlack: '#464747',
     white: '#FFFFFF',
     blue: '#0a0a1c',
-    border: '#EBECEC',
+    border: '#dedede',
     red: '#E2222F',
     placeholder: '#E3E9ED',
     popBlue: '#6772e5'
 };
 
 export const shadows = {
-    1: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+    1: '0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12)',
     2: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)'
 };
 
