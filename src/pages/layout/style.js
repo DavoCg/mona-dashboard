@@ -8,8 +8,12 @@ export default StyleSheet.create({
         marginRight: '15vw'
     },
 
+    main: {
+        flexGrow: 10
+    },
+
     content: {
-        flexGrow: 10,
+        height: 2000
     },
 
     sidebar: {
@@ -18,6 +22,7 @@ export default StyleSheet.create({
 
     top: {
         backgroundColor: 'red',
-        height: 80
+        height: 60,
+        marginTop: 15
     }
 });
