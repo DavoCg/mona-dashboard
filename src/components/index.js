@@ -1,5 +1,7 @@
 import Button from './button';
 import Input from './input';
 import Sidebar from './side-bar';
+import Topbar from './top-bar';
+import Popover from './popover';
 import page from './page';
-export {page, Input, Button, Sidebar};
+export {page, Input, Button, Sidebar, Topbar, Popover};

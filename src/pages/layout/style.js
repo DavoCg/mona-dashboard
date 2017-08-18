@@ -1,5 +1,5 @@
 import {StyleSheet} from 'aphrodite';
-import {colors, fontFamily} from '../../constants/style';
+import {colors, fontFamily, shadows} from '../../constants/style';
 
 export default StyleSheet.create({
     container: {
@@ -18,11 +18,5 @@ export default StyleSheet.create({
 
     sidebar: {
         flexGrow: 1
-    },
-
-    top: {
-        backgroundColor: 'red',
-        height: 60,
-        marginTop: 15
     }
 });

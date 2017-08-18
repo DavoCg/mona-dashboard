@@ -41,6 +41,10 @@ export default StyleSheet.create({
         }
     },
 
+    last: {
+        marginBottom: 15
+    },
+
     text: {
         color: colors.textGrey
     },

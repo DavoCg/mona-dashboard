@@ -1,14 +1,17 @@
 import React, {Component} from 'react';
 import {css} from 'aphrodite';
 import {mapDispatchToProps} from '../../utils';
-import {page, Sidebar} from '../../components';
+import {page, Sidebar, Topbar, Popover} from '../../components';
 import {connect} from 'react-redux';
 import style from './style';
 
 const content = [
-    {name: 'Mes oeuvres'},
-    {name: 'En vente'},
-    {name: 'Vendues'}
+    {name: 'Mes oeuvres', icon: 'picture'},
+    {name: 'En vente', icon: 'basket-loaded'},
+    {name: 'Vendues', icon: 'check', last: true},
+    {name: 'Facturations', icon: 'credit-card'},
+    {name: 'Mes informations', icon: 'user', last: true},
+    {name: 'Ajouter une oeuvre', icon: 'plus'}
 ];
 
 class Layout extends Component {
@@ -16,33 +19,30 @@ class Layout extends Component {
     constructor(props){
         super(props);
         this.state = {
-            active: 0
+            active: 0,
+            popover: false,
+            popoverNode: {}
         }
     }
 
-    onChange(active){
-        return this.setState({active});
-    }
-
     render(){
-        const {active} = this.state;
-
+        const {active, popover, popoverNode} = this.state;
         return (
             <div className={css(style.container)}>
                 <div className={css(style.sidebar)}>
                     <Sidebar active={active}
-                             onChange={(index) => this.onChange(index)}
+                             onChange={active => this.setState({active})}
                              items={content}/>
                 </div>
                 <div className={css(style.main)}>
-                    <div className={css(style.top)}>
-
-                    </div>
+                    <Topbar open={data => this.setState(data)}/>
                     <div className={css(style.content)}>
                         {this.props.children}
                     </div>
-
                 </div>
+                <Popover node={popoverNode}
+                         onHide={() => this.setState({popover: false})}
+                         open={popover}/>
             </div>
         );
     }

@@ -6,8 +6,8 @@ const item = (data, i, props) => {
     const current = i === props.active && style.current;
     return (
         <div onClick={() => props.onChange(i)}
-             className={css(style.item)}>
-            <i className={css(style.icon, current) + ' icon-people'}/>
+             className={css(style.item, data.last && style.last)}>
+            <i className={css(style.icon, current) + ` icon-${data.icon}`}/>
             <span className={css(style.text, current)}>{data.name}</span>
         </div>
     );
