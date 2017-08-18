@@ -3,7 +3,7 @@ const globalConstants = {
 };
 
 const userConstants = {
-
+    LOGOUT: 'LOGOUT'
 };
 
 export default Object.assign(globalConstants, userConstants);

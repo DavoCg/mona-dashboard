@@ -6,7 +6,6 @@ export default StyleSheet.create({
     container: {
         display: 'flex',
         position: 'absolute',
-        height: 100,
         width: 300,
         paddingTop: 10,
         transform: 'scale(1) opacity(1)',
@@ -16,7 +15,7 @@ export default StyleSheet.create({
     content: {
         backgroundColor: colors.white,
         position: 'relative',
-        height: 100,
+        padding: 15,
         width: 300,
         borderRadius: 3,
         boxShadow: shadows[1],

@@ -46,7 +46,17 @@ export default StyleSheet.create({
     },
 
     text: {
-        color: colors.textGrey
+        color: colors.textGrey,
+        padding: 0,
+        margin: 0
+    },
+
+    instaText: {
+        fontWeight: '300',
+        fontSize: '0.75em',
+        marginTop: 2,
+        cursor: 'pointer',
+        color: colors.popBlue
     },
 
     icon: {

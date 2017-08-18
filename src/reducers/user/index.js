@@ -8,7 +8,8 @@ const initialState = {
 };
 
 const handlers = {
-    [constants.RESET]: () => initialState
+    [constants.RESET]: () => initialState,
+    [constants.LOGOUT]: () => modifiers.onLogout
 };
 
 export default exporter(initialState, handlers);

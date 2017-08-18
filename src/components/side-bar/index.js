@@ -1,6 +1,7 @@
 import React from 'react';
 import {css} from 'aphrodite';
 import style from './style';
+import {InstagramConnect} from '../../components';
 
 const item = (data, i, props) => {
     const current = i === props.active && style.current;
@@ -19,7 +20,12 @@ export default (props) => (
             <img className={css(style.image)}
                  src={'https://scontent-cdg2-1.cdninstagram.com/t51.2885-19/s320x320/16584022_1315640315179035_1687232315450720256_a.jpg'}
                  alt={'profile picture'}/>
-            <p className={css(style.text)}>David Cingala</p>
+            <div>
+                <p className={css(style.text)}>David Cingala</p>
+                <InstagramConnect>
+                    <p className={css(style.text, style.instaText)}>Connect to Instagram</p>
+                </InstagramConnect>
+            </div>
         </div>
         <div className={css(style.content)}>
             {props.items.map((data, i) => item(data, i, props))}

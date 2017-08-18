@@ -20,7 +20,8 @@ class Layout extends Component {
             ],
             active: 0,
             popover: false,
-            popoverNode: {}
+            popoverNode: {},
+            popoverContent: null
         }
     }
 
@@ -29,8 +30,13 @@ class Layout extends Component {
         return () => actions.navigation.push(`/${name}`);
     }
 
+    logout(){
+        const {actions} = this.props;
+        return actions.user.logout();
+    }
+
     render(){
-        const {content, active, popover, popoverNode} = this.state;
+        const {content, active, popover, popoverNode, popoverContent} = this.state;
         return (
             <div className={css(style.container)}>
                 <div className={css(style.sidebar)}>
@@ -39,12 +45,14 @@ class Layout extends Component {
                              items={content}/>
                 </div>
                 <div className={css(style.main)}>
-                    <Topbar open={data => this.setState(data)}/>
+                    <Topbar logout={() => this.logout()}
+                            open={data => this.setState(data)}/>
                     <div className={css(style.content)}>
                         {this.props.children}
                     </div>
                 </div>
                 <Popover node={popoverNode}
+                         content={popoverContent}
                          onHide={() => this.setState({popover: false})}
                          open={popover}/>
             </div>
