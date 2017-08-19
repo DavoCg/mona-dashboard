@@ -9,11 +9,11 @@ export default StyleSheet.create({
     },
 
     main: {
-        flexGrow: 10
+        flexGrow: 8
     },
 
     content: {
-        height: 2000
+        paddingTop: 30
     },
 
     sidebar: {

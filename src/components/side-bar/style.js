@@ -47,6 +47,7 @@ export default StyleSheet.create({
 
     text: {
         color: colors.textGrey,
+        fontSize: '0.95em',
         padding: 0,
         margin: 0
     },

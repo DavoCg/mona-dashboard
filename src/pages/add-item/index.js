@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {css} from 'aphrodite';
-import {page} from '../../components';
+import {page, StepAdder} from '../../components';
 import style from './style';
 
 class AddItem extends Component {
@@ -11,11 +11,7 @@ class AddItem extends Component {
 
     render(){
         return (
-            <div>
-                <p className={css(style.text)}>
-                    {'Add item'}
-                </p>
-            </div>
+            <StepAdder/>
         );
     }
 }

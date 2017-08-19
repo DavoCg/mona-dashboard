@@ -11,12 +11,12 @@ class Layout extends Component {
         super(props);
         this.state = {
             content: [
-                {name: 'Mes oeuvres', icon: 'picture', handler: this.navigate('home')},
-                {name: 'En vente', icon: 'basket-loaded', handler: this.navigate('home')},
-                {name: 'Vendues', icon: 'check', handler: this.navigate('home'), last: true},
-                {name: 'Facturations', icon: 'credit-card', handler: this.navigate('billing')},
-                {name: 'Mes informations', icon: 'user', handler: this.navigate('informations'), last: true},
-                {name: 'Ajouter une oeuvre', icon: 'plus', handler: this.navigate('add-item')}
+                {name: 'Art items', icon: 'picture', handler: this.navigate('home')},
+                {name: 'On market', icon: 'basket-loaded', handler: this.navigate('home')},
+                {name: 'Sold', icon: 'check', handler: this.navigate('home'), last: true},
+                {name: 'Billing', icon: 'credit-card', handler: this.navigate('billing')},
+                {name: 'Informations', icon: 'user', handler: this.navigate('informations'), last: true},
+                {name: 'Add an item', icon: 'plus', handler: this.navigate('add-item')}
             ],
             active: 0,
             popover: false,
