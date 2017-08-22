@@ -5,15 +5,16 @@ import {colors, fontFamily, shadows} from '../../constants/style';
 export default StyleSheet.create({
 
     container: {
-        display: 'flex',
-        height: 400
+        display: 'flex'
     },
 
     title: {
         margin: 0,
         padding: 0,
         color: colors.textGrey,
-        fontWeight: '400'
+        fontWeight: '400',
+        userSelect: 'none',
+        marginBottom: 15
     },
 
     content: {
@@ -25,13 +26,15 @@ export default StyleSheet.create({
     },
 
     summary: {
-        flexGrow: 1
+        flexGrow: 1,
+        alignSelf: 'flex-start'
     },
 
     footer: {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        marginTop: 15
     },
 
     hidden: {

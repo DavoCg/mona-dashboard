@@ -4,6 +4,7 @@ import {colors, shadows, fontFamily} from '../../constants/style';
 
 export default StyleSheet.create({
     container: {
+        maxHeight: 'auto',
         display: 'flex',
         position: 'absolute',
         width: 300,
@@ -23,7 +24,9 @@ export default StyleSheet.create({
     },
 
     close: {
-        display: 'none',
+        maxHeight: 0,
+        overflow: 'hidden',
+        visibility: 'hidden',
         transition: 'transform 5s ease-out',
         transform: 'scale(0.7) opacity(0.8)'
     },

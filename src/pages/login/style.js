@@ -33,6 +33,7 @@ export default StyleSheet.create({
     },
 
     button: {
-        marginTop: 15
+        marginTop: 15,
+        width: '92%'
     }
 });

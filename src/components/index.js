@@ -7,4 +7,6 @@ import page from './page';
 import Search from './search';
 import StepAdder from './step-adder';
 import InstagramConnect from './instagram-connect';
-export {page, Input, Button, Sidebar, Topbar, Popover, Search, InstagramConnect, StepAdder};
+import Modal from './modal';
+import Image from './image';
+export {page, Input, Button, Sidebar, Topbar, Popover, Search, InstagramConnect, StepAdder, Modal, Image};

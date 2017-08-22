@@ -19,7 +19,8 @@ export default StyleSheet.create({
         height: 40,
         width: 40,
         borderRadius: 20,
-        marginRight: 15
+        marginRight: 15,
+        userSelect: 'none'
     },
 
     content: {
@@ -49,7 +50,8 @@ export default StyleSheet.create({
         color: colors.textGrey,
         fontSize: '0.95em',
         padding: 0,
-        margin: 0
+        margin: 0,
+        userSelect: 'none'
     },
 
     instaText: {

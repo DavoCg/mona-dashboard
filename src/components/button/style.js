@@ -1,8 +1,12 @@
 import {StyleSheet} from 'aphrodite';
+import {darken} from 'polished';
 import {colors, shadows, fontFamily} from '../../constants/style';
 
 export default StyleSheet.create({
     container: {
+        appearance: 'none',
+        border: 0,
+        outline: 0,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -13,6 +17,7 @@ export default StyleSheet.create({
         borderRadius: 2,
         cursor: 'pointer',
         boxShadow: shadows[1],
+        userSelect: 'none',
         ':active': {
             boxShadow: 'none'
         }
@@ -21,7 +26,7 @@ export default StyleSheet.create({
     text: {
         color: colors.white,
         textTransform: 'uppercase',
-        fontSize: '0.75em',
+        fontSize: '1em',
         letterSpacing: 1.75,
         fontWeight: 400
     },
@@ -36,5 +41,10 @@ export default StyleSheet.create({
 
     dark: {
         backgroundColor: colors.blue
+    },
+
+    disabled: {
+        backgroundColor: colors.lightgreyDarker(0.08),
+        boxShadow: 'none'
     }
 });

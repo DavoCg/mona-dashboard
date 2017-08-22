@@ -3,12 +3,17 @@ import {darken, opacify} from 'polished';
 import {colors, fontFamily, shadows} from '../../constants/style';
 
 export default StyleSheet.create({
+
+    container: {
+        marginBottom: 15
+    },
+
     progress: {
         position: 'relative',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: darken(0.01, colors.lightgrey),
+        backgroundColor: colors.lightgreyDarker(0.01),
         height: 6,
         borderRadius: 3,
         marginTop: 15,
@@ -33,7 +38,7 @@ export default StyleSheet.create({
         height: 12,
         width: 12,
         borderRadius: 6,
-        backgroundColor: darken(0.01, colors.lightgrey),
+        backgroundColor: colors.lightgreyDarker(0.01),
         transition: 'all 0.2s ease-out'
     },
 
@@ -46,19 +51,27 @@ export default StyleSheet.create({
     },
 
     dotTitle: {
-        color: darken(0.2, colors.lightgrey),
-        fontSize: '0.75em',
+        color: colors.lightgreyDarker(0.2),
+        fontSize: '0.8em',
+        fontWeight: '300',
         top: 0,
-        transition: 'all 0.2s ease-out'
+        transition: 'all 0.2s ease-out',
+        userSelect: 'none'
     },
 
     activeTitle: {
         color: colors.popBlue,
-        transition: 'all 0.2s ease-out'
+        fontWeight: '400',
+        transition: 'all 0.2s 0.22s ease-out'
     },
 
     active: {
         backgroundColor: colors.popBlue,
-        transition: 'all 0.2s ease-out'
+        transition: 'all 0.2s  ease-out'
+    },
+
+    dotActive: {
+        backgroundColor: colors.popBlue,
+        transition: 'all 0.2s 0.22s ease-out'
     }
 });

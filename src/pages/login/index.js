@@ -21,7 +21,6 @@ class Login extends Component {
                     <Input placeholder={'Password'}
                            type={'password'}/>
                     <Button style={style.button}
-                            full={true}
                             theme={'dark'}
                             text={'Signin to my account'}/>
                 </div>

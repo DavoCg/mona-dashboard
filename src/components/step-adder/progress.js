@@ -3,7 +3,7 @@ import {css} from 'aphrodite';
 import style from './progress-style';
 
 const dot = (data, i, active) => {
-    return <div className={css(style.dot, i <= active && style.active)}></div>;
+    return <div className={css(style.dot, i <= active && style.dotActive)}></div>;
 };
 
 const title = (data, i, active) => {
@@ -15,7 +15,7 @@ export default (props) => {
     const progress = active / (steps.length - 1) * 100;
 
     return(
-        <div>
+        <div className={css(style.container)}>
             <div className={css(style.progress)}>
                 <div style={{width: `${progress}%`}}
                      className={css(style.avancement, style.active)}></div>

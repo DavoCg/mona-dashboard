@@ -1,7 +1,9 @@
 import {StyleSheet} from 'aphrodite';
+import {darken} from 'polished';
 
 export const colors = {
     lightgrey: '#F8F9F9',
+    lightgreyDarker: (v) => darken(v || 0.1, '#F8F9F9'),
     textGrey: '#656565',
     textBlack: '#464747',
     white: '#FFFFFF',

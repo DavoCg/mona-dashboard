@@ -17,6 +17,7 @@ export default StyleSheet.create({
         fontWeight: '300',
         color: colors.textGrey,
         transition: 'all 0.2s ease-out',
+        userSelect: 'none',
         ':focus': {
             transition: 'all 0.2s ease-out',
         },
