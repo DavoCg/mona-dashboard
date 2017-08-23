@@ -5,6 +5,7 @@ import {cs} from '../../constants/style';
 
 const close = (onClose) => {
     return (e) => {
+        console.log('overlay click')
         e.stopPropagation();
         return onClose();
     }

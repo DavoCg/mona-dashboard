@@ -1,5 +1,5 @@
 import {StyleSheet} from 'aphrodite';
-import {opacify} from 'polished';
+import {rgba} from 'polished';
 import {colors, shadows, fontFamily} from '../../constants/style';
 
 export default StyleSheet.create({
@@ -28,11 +28,34 @@ export default StyleSheet.create({
         bottom: 3,
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        zIndex: 1
     },
 
     icon: {
-        fontSize: '3em',
-        color: colors.lightgreyDarker(0.15),
+        fontSize: '2.3em',
+        color: colors.lightgreyDarker(0.15)
+    },
+
+    iconTrash: {
+        fontSize: '1em',
+        color: 'white',
+        padding: 6,
+        position: 'absolute',
+        backgroundColor: rgba(colors.blue, 0.25),
+        transition: 'all 0.1s ease-out',
+        borderRadius: 2,
+        top: 0,
+        right: 0,
+        ':hover': {
+            backgroundColor: rgba(colors.blue, 0.5),
+            fontSize: '1.2em',
+            transition: 'all 0.1s ease-out'
+        }
+    },
+
+    image: {
+        width: '100%',
+        height: '100%'
     }
 });

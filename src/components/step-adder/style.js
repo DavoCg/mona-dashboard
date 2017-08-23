@@ -19,14 +19,16 @@ export default StyleSheet.create({
 
     content: {
         display: 'flex',
+        alignSelf: 'flex-start',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        flexGrow: 3,
-        marginRight: 15
+        marginRight: 15,
+        width: '70%',
+        transition: 'all 0.2s ease-out'
     },
 
     summary: {
-        flexGrow: 1,
+        width: '30%',
         alignSelf: 'flex-start'
     },
 

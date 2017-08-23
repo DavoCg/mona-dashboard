@@ -1,11 +1,12 @@
 import {StyleSheet} from 'aphrodite';
 import {darken, opacify} from 'polished';
-import {colors, fontFamily, shadows} from '../../constants/style';
+import {colors, fontFamily, shadows} from '../../../constants/style';
 
 export default StyleSheet.create({
 
     container: {
-        marginBottom: 15
+        marginBottom: 15,
+        paddingBottom: 10
     },
 
     progress: {
@@ -52,7 +53,7 @@ export default StyleSheet.create({
 
     dotTitle: {
         color: colors.lightgreyDarker(0.2),
-        fontSize: '0.8em',
+        fontSize: '0.85em',
         fontWeight: '300',
         top: 0,
         transition: 'all 0.2s ease-out',

@@ -38,7 +38,7 @@ export default StyleSheet.create({
             transition: 'all 0.25s ease-out',
             cursor: 'pointer',
             color: darken(0.9, colors.textGrey),
-            backgroundColor: darken(0.05, colors.lightgrey)
+            backgroundColor: colors.lightgreyDarker(0.05)
         }
     },
 

@@ -10,8 +10,10 @@ export const colors = {
     blue: '#0a0a1c',
     border: '#efefef',
     red: '#E2222F',
+    green: '#64C962',
     placeholder: '#E3E9ED',
-    popBlue: '#6772e5'
+    //popBlue: '#6772e5'
+    popBlue: '#548FFD'
 };
 
 export const shadows = {

@@ -27,6 +27,7 @@ export default StyleSheet.create({
         color: colors.white,
         textTransform: 'uppercase',
         fontSize: '1em',
+        fontFamily: fontFamily,
         letterSpacing: 1.75,
         fontWeight: 400
     },
@@ -41,6 +42,10 @@ export default StyleSheet.create({
 
     dark: {
         backgroundColor: colors.blue
+    },
+
+    success: {
+        backgroundColor: colors.green
     },
 
     disabled: {

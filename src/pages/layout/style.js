@@ -3,13 +3,11 @@ import {colors, fontFamily, shadows} from '../../constants/style';
 
 export default StyleSheet.create({
     container: {
-        display: 'flex',
-        marginLeft: '15vw',
-        marginRight: '15vw'
+        display: 'flex'
     },
 
     main: {
-        flexGrow: 8
+        width: '83%'
     },
 
     content: {
@@ -17,6 +15,6 @@ export default StyleSheet.create({
     },
 
     sidebar: {
-        flexGrow: 1
+        width: '17%'
     }
 });

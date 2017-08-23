@@ -9,9 +9,13 @@ class AddItem extends Component {
         super(props);
     }
 
+    onValidate(payload){
+        console.log('payload', payload);
+    }
+
     render(){
         return (
-            <StepAdder/>
+            <StepAdder onValidate={payload => this.onValidate(payload)}/>
         );
     }
 }

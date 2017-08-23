@@ -15,8 +15,8 @@ export default StyleSheet.create({
     },
 
     logo: {
-        width: '6vw',
-        minWidth: '80px',
+        height: '5vh',
+        minHeight: '5vh',
         marginBottom: 30
     },
 

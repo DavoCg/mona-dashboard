@@ -1,6 +1,6 @@
 import React from 'react';
 import {css} from 'aphrodite';
-import style from './progress-style';
+import style from './style';
 
 const dot = (data, i, active) => {
     return <div className={css(style.dot, i <= active && style.dotActive)}></div>;
