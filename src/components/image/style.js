@@ -19,7 +19,8 @@ export default StyleSheet.create({
     },
 
     content: {
-        backgroundColor: colors.lightgreyDarker(0.04),
+        backgroundColor: colors.lightgreyDarker(0.01),
+        border: '1px solid #efefef',
         position: 'absolute',
         borderRadius: 2,
         top: 3,
@@ -34,7 +35,7 @@ export default StyleSheet.create({
 
     icon: {
         fontSize: '2.3em',
-        color: colors.lightgreyDarker(0.15)
+        color: colors.lightgreyDarker(0.1)
     },
 
     iconTrash: {

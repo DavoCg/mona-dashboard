@@ -7,12 +7,12 @@ const LoggedRouter = () => {
     return (
         <Layout>
             <Switch>
-                <Route exact path='/home' component={Home}/>
+                <Route exact path='/items' component={Home}/>
                 <Route exact path='/add-item' component={AddItem}/>
                 <Route exact path='/informations' component={Informations}/>
                 <Route exact path='/billing' component={Billing}/>
                 <Route path='/items/:id' component={Item}/>
-                <Redirect from={'/'} exact to={'/home'} />
+                <Redirect from={'/'} exact to={'/items'} />
             </Switch>
         </Layout>
     );

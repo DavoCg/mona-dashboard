@@ -12,7 +12,6 @@ export const colors = {
     red: '#E2222F',
     green: '#64C962',
     placeholder: '#E3E9ED',
-    //popBlue: '#6772e5'
     popBlue: '#548FFD'
 };
 
@@ -33,7 +32,7 @@ export const cs = StyleSheet.create({
 
     upperText: {
         alignSelf: 'baseline',
-        color: colors.lightgreyDarker(0.4),
+        color: colors.lightgreyDarker(0.45),
         textTransform: 'uppercase',
         fontSize: '0.80em',
         fontFamily: fontFamily,

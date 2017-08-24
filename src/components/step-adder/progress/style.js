@@ -10,6 +10,7 @@ export default StyleSheet.create({
     },
 
     progress: {
+        border: '1px solid #efefef',
         position: 'relative',
         display: 'flex',
         justifyContent: 'space-between',
@@ -40,7 +41,8 @@ export default StyleSheet.create({
         width: 12,
         borderRadius: 6,
         backgroundColor: colors.lightgreyDarker(0.01),
-        transition: 'all 0.2s ease-out'
+        transition: 'all 0.2s ease-out',
+        border: '1px solid #efefef'
     },
 
     titles: {
@@ -72,6 +74,7 @@ export default StyleSheet.create({
 
     dotActive: {
         backgroundColor: colors.popBlue,
-        transition: 'all 0.2s 0.22s ease-out'
+        transition: 'all 0.2s 0.22s ease-out',
+        border: 'none'
     }
 });

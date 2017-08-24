@@ -11,7 +11,7 @@ class Layout extends Component {
         super(props);
         this.state = {
             content: [
-                {name: 'Items', icon: 'picture', handler: this.navigate('home'),  path: '/home', last: true},
+                {name: 'Items', icon: 'picture', handler: this.navigate('items'),  path: '/items', last: true},
                 {name: 'Billing', icon: 'credit-card', handler: this.navigate('billing'), path: '/billing'},
                 {name: 'Informations', icon: 'user', handler: this.navigate('informations'),  path: '/informations', last: true},
                 {name: 'Add an item', icon: 'plus', handler: this.navigate('add-item'),  path: '/add-item'}
@@ -35,7 +35,7 @@ class Layout extends Component {
 
     setActive(path){
         const {content} = this.state;
-        const active = content.findIndex(c => c.path === path);
+        const active = content.findIndex(c => path.includes(c.path));
         return this.setState({active});
     }
 

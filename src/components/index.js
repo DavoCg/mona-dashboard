@@ -9,5 +9,6 @@ import StepAdder from './step-adder';
 import InstagramConnect from './instagram-connect';
 import Modal from './modal';
 import Image from './image';
+import Table from './table';
 import Card from './card';
-export {page, Input, Button, Sidebar, Topbar, Popover, Search, InstagramConnect, StepAdder, Modal, Image, Card};
+export {page, Input, Button, Sidebar, Topbar, Popover, Search, InstagramConnect, StepAdder, Modal, Image, Card, Table};

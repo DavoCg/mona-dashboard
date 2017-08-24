@@ -4,7 +4,7 @@ import {colors, shadows, fontFamily} from '../../constants/style';
 
 export default StyleSheet.create({
     overlay: {
-        transition: 'opacity 0.15s ease-out',
+        transition: 'opacity 0.1s ease-out',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -23,7 +23,7 @@ export default StyleSheet.create({
     },
 
     close: {
-        transition: 'opacity 0.15s ease-out',
+        transition: 'opacity 0.1s ease-out',
         height: 0,
         opacity: 0
     },

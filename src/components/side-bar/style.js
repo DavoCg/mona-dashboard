@@ -29,6 +29,7 @@ export default StyleSheet.create({
 
     item: {
         display: 'flex',
+        alignItems: 'center',
         margin: 0,
         padding: '10px 5px',
         borderRadius: 2,
@@ -47,27 +48,29 @@ export default StyleSheet.create({
     },
 
     text: {
+        color: colors.textGrey,
+        fontSize: '0.95em',
         padding: 0,
         margin: 0,
-        userSelect: 'none'
+        userSelect: 'none',
     },
 
     instaText: {
         fontWeight: '300',
-        fontSize: '0.65em',
-        marginTop: 5,
+        fontSize: '0.75em',
+        marginTop: 3,
         cursor: 'pointer',
         color: colors.popBlue
     },
 
     icon: {
         marginRight: 10,
-        color: colors.lightgreyDarker(0.3)
+        color: colors.textGrey
     },
 
     current: {
         transition: 'all 0.25s ease-out',
         color: colors.popBlue,
-        fontWeight: '400'
+        fontWeight: '300'
     }
 });

@@ -10,10 +10,10 @@ body {
     padding-right: 5vw;
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1400px){
     .container-mona{
-        padding-left: 15vw;
-        padding-right: 15vw;
+        padding-left: 12vw;
+        padding-right: 12vw;
     }
 }
 
