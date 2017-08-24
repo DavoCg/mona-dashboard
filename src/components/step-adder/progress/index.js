@@ -1,13 +1,14 @@
 import React from 'react';
 import {css} from 'aphrodite';
 import style from './style';
+import {cs} from '../../../constants/style';
 
 const dot = (data, i, active) => {
     return <div className={css(style.dot, i <= active && style.dotActive)}></div>;
 };
 
 const title = (data, i, active) => {
-    return <p className={css(style.dotTitle, i <= active && style.activeTitle)}>{data.name}</p>;
+    return <p className={css(cs.upperText, style.dotTitle, i <= active && style.activeTitle)}>{data.name}</p>;
 };
 
 export default (props) => {

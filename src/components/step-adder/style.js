@@ -13,6 +13,7 @@ export default StyleSheet.create({
         padding: 0,
         color: colors.textGrey,
         fontWeight: '400',
+        fontSize: '0.9em',
         userSelect: 'none',
         marginBottom: 15
     },

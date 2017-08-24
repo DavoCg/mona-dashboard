@@ -26,8 +26,18 @@ export const fontFamily = 'Fira Sans';
 export const cs = StyleSheet.create({
     box: {
         backgroundColor: colors.white,
-        borderRadius: 3,
+        borderRadius: 2,
         padding: 15,
         boxShadow: shadows[1]
+    },
+
+    upperText: {
+        alignSelf: 'baseline',
+        color: colors.lightgreyDarker(0.4),
+        textTransform: 'uppercase',
+        fontSize: '0.80em',
+        fontFamily: fontFamily,
+        letterSpacing: 1.2,
+        fontWeight: 300
     }
 });

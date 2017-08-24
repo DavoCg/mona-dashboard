@@ -18,13 +18,7 @@ export default StyleSheet.create({
     },
 
     title: {
-        color: colors.lightgreyDarker(0.2),
-        fontSize: '0.9em',
-        fontWeight: '300',
-        userSelect: 'none',
-        margin: 0,
-        padding: 0,
-        paddingBottom: 5
+        fontSize: '0.75em'
     },
 
     descriptionText: {
@@ -43,10 +37,10 @@ export default StyleSheet.create({
         fontWeight: '300',
         backgroundColor: colors.popBlue,
         padding: 10,
-        paddingTop: 5,
-        paddingBottom: 5,
+        paddingTop: 7,
+        paddingBottom: 7,
         borderRadius: 2,
-        letterSpacing: '0.5px',
+        letterSpacing: '1px',
         display: 'inline-block'
     }
 });

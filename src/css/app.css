@@ -5,13 +5,13 @@ body {
     background-color: #F8F9F9;
 }
 
-.container {
+.container-mona {
     padding-left: 5vw;
     padding-right: 5vw;
 }
 
 @media screen and (min-width: 1300px){
-    .container{
+    .container-mona{
         padding-left: 15vw;
         padding-right: 15vw;
     }

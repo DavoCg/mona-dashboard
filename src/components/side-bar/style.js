@@ -47,8 +47,6 @@ export default StyleSheet.create({
     },
 
     text: {
-        color: colors.textGrey,
-        fontSize: '0.95em',
         padding: 0,
         margin: 0,
         userSelect: 'none'
@@ -56,15 +54,15 @@ export default StyleSheet.create({
 
     instaText: {
         fontWeight: '300',
-        fontSize: '0.75em',
-        marginTop: 2,
+        fontSize: '0.65em',
+        marginTop: 5,
         cursor: 'pointer',
         color: colors.popBlue
     },
 
     icon: {
         marginRight: 10,
-        color: colors.textGrey
+        color: colors.lightgreyDarker(0.3)
     },
 
     current: {

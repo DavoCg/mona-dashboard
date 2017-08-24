@@ -1,5 +1,9 @@
-import {push as p} from 'react-router-redux'
+import {push as p, goBack} from 'react-router-redux'
 
 export function push(name){
     return p(name);
+}
+
+export function back(){
+    return goBack();
 }

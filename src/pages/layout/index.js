@@ -11,9 +11,7 @@ class Layout extends Component {
         super(props);
         this.state = {
             content: [
-                {name: 'Art items', icon: 'picture', handler: this.navigate('home'), path: '/home'},
-                {name: 'On market', icon: 'basket-loaded', handler: this.navigate('home'), path: '/home'},
-                {name: 'Sold', icon: 'check', handler: this.navigate('home'),  path: '/home', last: true},
+                {name: 'Items', icon: 'picture', handler: this.navigate('home'),  path: '/home', last: true},
                 {name: 'Billing', icon: 'credit-card', handler: this.navigate('billing'), path: '/billing'},
                 {name: 'Informations', icon: 'user', handler: this.navigate('informations'),  path: '/informations', last: true},
                 {name: 'Add an item', icon: 'plus', handler: this.navigate('add-item'),  path: '/add-item'}
@@ -26,9 +24,17 @@ class Layout extends Component {
     }
 
     componentDidMount(){
-        const {routing} = this.props;
+        const {path} = this.props;
+        return this.setActive(path);
+    }
+    
+    componentWillReceiveProps(next){
+        const {path} = this.props;
+        if(next.path !== path) this.setActive(next.path);
+    }
+
+    setActive(path){
         const {content} = this.state;
-        const path = routing.location.pathname;
         const active = content.findIndex(c => c.path === path);
         return this.setState({active});
     }
@@ -44,9 +50,11 @@ class Layout extends Component {
     }
 
     render(){
+        const {path} = this.props;
         const {content, active, popover, popoverNode, popoverContent} = this.state;
+
         return (
-            <div className={css(style.container) + ' container'}>
+            <div className={css(style.container) + ' container-mona'}>
                 <div className={css(style.sidebar)}>
                     <Sidebar active={active}
                              onChange={active => this.setState({active})}
@@ -69,5 +77,5 @@ class Layout extends Component {
 }
 
 export default page(state => ({
-    routing: state.routing
+    path: state.routing.location.pathname
 }))(Layout)

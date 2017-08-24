@@ -1,6 +1,7 @@
 import React from 'react';
 import {css} from 'aphrodite';
 import style from './style';
+import {cs} from '../../constants/style';
 import {InstagramConnect} from '../../components';
 
 const item = (data, i, props) => {
@@ -9,7 +10,7 @@ const item = (data, i, props) => {
         <div onClick={() => {props.onChange(i); data.handler()}}
              className={css(style.item, data.last && style.last)}>
             <i className={css(style.icon, current) + ` icon-${data.icon}`}/>
-            <span className={css(style.text, current)}>{data.name}</span>
+            <span className={css(cs.upperText, style.text, current)}>{data.name}</span>
         </div>
     );
 };
@@ -21,9 +22,9 @@ export default (props) => (
                  src={'https://scontent-cdg2-1.cdninstagram.com/t51.2885-19/s320x320/16584022_1315640315179035_1687232315450720256_a.jpg'}
                  alt={'profile picture'}/>
             <div>
-                <p className={css(style.text)}>David Cingala</p>
+                <p className={css(cs.upperText, style.text)}>David Cingala</p>
                 <InstagramConnect>
-                    <p className={css(style.text, style.instaText)}>Connect to Instagram</p>
+                    <p className={css(cs.upperText, style.text, style.instaText)}>Connect to Instagram</p>
                 </InstagramConnect>
             </div>
         </div>

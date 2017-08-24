@@ -25,8 +25,8 @@ export default class StepAdder extends Component {
             ],
             form: {
                 pictures: [],
-                description: '',
-                price: null
+                description: 'BN',
+                price: 200
             }
         }
     }
@@ -96,7 +96,7 @@ export default class StepAdder extends Component {
                     </div>
                 </div>
                 <div className={css(cs.box, style.summary)}>
-                    <h4 className={css(style.title)}>{'Summary'}</h4>
+                    <h4 className={css(cs.upperText, style.title)}>{'Summary'}</h4>
                     <Summary description={description}
                              pictures={pictures}
                              price={price}/>
