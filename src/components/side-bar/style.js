@@ -16,8 +16,7 @@ export default StyleSheet.create({
     },
 
     image: {
-        height: 40,
-        width: 40,
+        width: 100,
         borderRadius: 20,
         marginRight: 15,
         userSelect: 'none'

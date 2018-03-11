@@ -21,12 +21,7 @@ const openPop = (e, props, content) => {
 
 export default (props) => (
     <div className={css(style.top)}>
-        <Search/>
         <div className={css(style.icons)}>
-            <i onClick={(e) => openPop(e, props)}
-               className={css(style.icon) + ' icon-book-open'}/>
-            <i onClick={(e) => openPop(e, props)}
-               className={css(style.icon) + ' icon-bell'}/>
             <i onClick={(e) => openPop(e, props, account(props))}
                className={css(style.iconAccount) + ' icon-user'}/>
         </div>

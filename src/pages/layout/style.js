@@ -7,7 +7,7 @@ export default StyleSheet.create({
     },
 
     main: {
-        width: '83%'
+        width: '87%'
     },
 
     content: {
@@ -15,6 +15,6 @@ export default StyleSheet.create({
     },
 
     sidebar: {
-        width: '17%'
+        width: '13%'
     }
 });

@@ -19,14 +19,8 @@ export default (props) => (
     <div className={css(style.container)}>
         <div className={css(style.header)}>
             <img className={css(style.image)}
-                 src={'https://scontent-cdg2-1.cdninstagram.com/t51.2885-19/s320x320/16584022_1315640315179035_1687232315450720256_a.jpg'}
+                 src={'https://stripe.com/img/about/logos/logos/blue.png'}
                  alt={'profile picture'}/>
-            <div>
-                <p className={css(style.text)}>David Cingala</p>
-                <InstagramConnect>
-                    <p className={css(style.text, style.instaText)}>Connect to Instagram</p>
-                </InstagramConnect>
-            </div>
         </div>
         <div className={css(style.content)}>
             {props.items.map((data, i) => item(data, i, props))}

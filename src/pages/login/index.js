@@ -8,6 +8,19 @@ class Login extends Component {
 
     constructor(props){
         super(props);
+        this.state = {
+          email: 'admin@shatap.co',
+          password: 'david'
+        }
+    }
+    
+    onClick = () => {
+      const {actions} = this.props;
+      return actions.user.login(this.state);
+    }
+    
+    onChange = (name) => {
+      return e => this.setState({[name]: e.target.value});
     }
 
     render(){
@@ -17,12 +30,17 @@ class Login extends Component {
                      src={logo}
                      alt={'Mona logo'}/>
                 <div className={css(style.box)}>
-                    <Input placeholder={'Username or email'}/>
-                    <Input placeholder={'Password'}
+                    <Input onChange={this.onChange('email')}
+                           value={this.state.email}
+                           placeholder={'Email'}/>
+                    <Input onChange={this.onChange('password')}
+                           value={this.state.password}
+                           placeholder={'Password'}
                            type={'password'}/>
                     <Button style={style.button}
+                            onClick={this.onClick}
                             theme={'dark'}
-                            text={'Signin to my account'}/>
+                            text={'Signin to shatap dashboard'}/>
                 </div>
             </div>
         );

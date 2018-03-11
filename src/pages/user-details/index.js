@@ -3,7 +3,7 @@ import {css} from 'aphrodite';
 import {page} from '../../components';
 import style from './style';
 
-class Billing extends Component {
+class UserDetails extends Component {
 
     constructor(props){
         super(props);
@@ -13,7 +13,7 @@ class Billing extends Component {
         return (
             <div>
                 <p className={css(style.text)}>
-                    {'Billing'}
+                    {'User details'}
                 </p>
             </div>
         );
@@ -22,4 +22,4 @@ class Billing extends Component {
 
 export default page((state) => ({
 
-}))(Billing)
+}))(UserDetails)

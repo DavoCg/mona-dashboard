@@ -11,10 +11,9 @@ class Layout extends Component {
         super(props);
         this.state = {
             content: [
-                {name: 'Items', icon: 'picture', handler: this.navigate('items'),  path: '/items', last: true},
-                {name: 'Billing', icon: 'credit-card', handler: this.navigate('billing'), path: '/billing'},
-                {name: 'Informations', icon: 'user', handler: this.navigate('informations'),  path: '/informations', last: true},
-                {name: 'Add an item', icon: 'plus', handler: this.navigate('add-item'),  path: '/add-item'}
+                {name: 'Users', icon: 'user', handler: this.navigate('users'),  path: '/users', last: true},
+                {name: 'Offers', icon: 'list', handler: this.navigate('offers'), path: '/offers'},
+                {name: 'Searches', icon: 'list', handler: this.navigate('searches'),  path: '/searches', last: true}
             ],
             active: 0,
             popover: false,

@@ -13,7 +13,7 @@ class Informations extends Component {
         return (
             <div>
                 <p className={css(style.text)}>
-                    {'Informations'}
+                    {'Searches'}
                 </p>
             </div>
         );

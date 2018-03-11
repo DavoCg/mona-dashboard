@@ -1,18 +1,17 @@
 import React from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {Home, Login, Layout, AddItem, Informations, Billing, Item} from '../pages';
+import {Home, Login, Layout, Offers, Searches, Users, Item} from '../pages';
 
 const LoggedRouter = () => {
     return (
         <Layout>
             <Switch>
-                <Route exact path='/items' component={Home}/>
-                <Route exact path='/add-item' component={AddItem}/>
-                <Route exact path='/informations' component={Informations}/>
-                <Route exact path='/billing' component={Billing}/>
+                <Route exact path='/offers' component={Offers}/>
+                <Route exact path='/searches' component={Searches}/>
+                <Route exact path='/users' component={Users}/>
                 <Route path='/items/:id' component={Item}/>
-                <Redirect from={'/'} exact to={'/items'} />
+                <Redirect from={'/'} exact to={'/users'} />
             </Switch>
         </Layout>
     );

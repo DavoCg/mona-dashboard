@@ -12,7 +12,8 @@ export default class Search extends Component {
     render(){
         const {placeholder = 'Search'} = this.props;
         return (
-            <input className={css(style.container)}
+            <input {...this.props}
+                   className={css(style.container)}
                    placeholder={placeholder}
                    type={'text'}/>
         );

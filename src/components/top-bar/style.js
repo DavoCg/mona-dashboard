@@ -6,7 +6,7 @@ export default StyleSheet.create({
     top: {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-end',
         height: 60,
         marginTop: 15
     },
